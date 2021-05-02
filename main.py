@@ -5,9 +5,26 @@ try:
         inputList = sys.argv[1:]
     else:
         print("Missing input")
-        print("Please enter your command in this format: python main.py 23 34")
+        print("Please enter at least one non-negative integer: python main.py 5 34")
         sys.exit(0)
 
+    errorArray = [] 
+    for i in range(len(inputList)):
+        if not inputList[i].strip().isdigit():
+            errorArray.append(inputList[i]) 
+        
+    if len(errorArray) > 0:
+        print("Wrong input:", errorArray)
+        print("Please enter non-negative integer(s) in this format: python main.py 5 34")
+        sys.exit(0)
+ 
+        #try: 
+        #   test = test/2
+        #except Exception as ex:
+        #   print("Wrong input:", test)
+        #   print("Please enter number(s) in this format: python main.py 5 34")
+        #   sys.exit(0)
+ 
     for i in range(len(inputList)):
     
         remainder = []
@@ -58,7 +75,10 @@ try:
             print("")
 
 except Exception as ex:
-    print("error")
+    print("")
+    print("System error!", )
+    print("Try your command in this format: python main.py 5 34")
+    sys.exit(0)
 
 
 
