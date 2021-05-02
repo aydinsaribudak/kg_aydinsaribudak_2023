@@ -1,4 +1,4 @@
-import sys#, imp, json, traceback, time, socket, math
+import sys
 
 try: 
     if len(sys.argv) > 1:
@@ -18,13 +18,6 @@ try:
         print("Please enter non-negative integer(s) in this format: python main.py 5 34")
         sys.exit(0)
  
-        #try: 
-        #   test = test/2
-        #except Exception as ex:
-        #   print("Wrong input:", test)
-        #   print("Please enter number(s) in this format: python main.py 5 34")
-        #   sys.exit(0)
- 
     for i in range(len(inputList)):
     
         remainder = []
@@ -32,19 +25,16 @@ try:
         # calcute remainder and quotient
         inputListInt = int(inputList[i])
         rem = inputListInt % 10
-        #print(rem)
         remainder.append(rem)
         quot = int(inputListInt / 10)
-        #print(quot)
 
         # calcute remainder and quotient recursively
         while quot >= 1:
             rem = quot % 10
             remainder.append(rem)
             quot = int(quot / 10)
-            #print(quot)
-    
-        #print(remainder)
+   
+        # convert digits to phonetic equivalent 
         for j in reversed(remainder):
             if j == 1:
                 print("One", end="")
