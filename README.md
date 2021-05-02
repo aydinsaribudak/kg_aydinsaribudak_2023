@@ -4,6 +4,9 @@ Sample run:
 
 ```python main.py 34 166 0```
 
+or
+```node main.js 34 166 0```
+
 Output:
 
 ```
