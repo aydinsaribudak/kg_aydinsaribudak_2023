@@ -2,13 +2,17 @@ This code converts an array of integers into an array of strings representing yt
 
 Sample run:
 
-'''python main.py 34 166 0'''
+```python main.py 34 166 0```
 
 Output:
 
-'''ThreeFour,OneSixSix,Zero'''
+```
+ThreeFour,OneSixSix,Zero
+```
 
 
 To clone repo on your local:
 
-'''git clone https://github.com/aydinsaribudak/kg_aydinsaribudak_2023.git'''
+```
+git clone https://github.com/aydinsaribudak/kg_aydinsaribudak_2023.git
+```
