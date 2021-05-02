@@ -1,5 +1,5 @@
 
-var inputList = [341,4, 32]; 
+var inputList = process.argv.slice(2);
 var i;
 var j;
 var numValArr = [];
